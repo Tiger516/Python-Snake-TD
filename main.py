@@ -1,6 +1,3 @@
-from tkinter import N
-
-
 print("Hello!")
 print("What is your name?")
 name = input()
