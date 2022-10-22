@@ -1,17 +1,13 @@
-import pygame
+import pygame as pg
 
-background_colour = (50, 50, 50)
-screen = pygame.display.set_mode((800, 600))
+screen_fill = 50, 50, 50
+window_size = 800
+screen = pg.display.set_mode([window_size] * 2)
 
-pygame.display.set_caption('Snake')
-
-screen.fill(background_colour)
-
-pygame.display.flip()
-
-running = True
-
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+while True:
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            exit()
+    
+    screen.fill(screen_fill)
+    pg.display.flip()
