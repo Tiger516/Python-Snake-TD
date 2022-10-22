@@ -1,16 +1,16 @@
-from email.mime import image
-import pygame as pg
+import pygame
 
-screen_fill = 50, 50, 50
-window_size = 800
-screen = pg.display.set_mode([window_size] * 2)
+Window_Size = 500
+Window_Game_Name = "Snake"
+running = True
+background_colour = (50, 50, 50)
+screen = pygame.display.set_mode([Window_Size] * 2)
+pygame.display.set_caption(Window_Game_Name)
 
-pg.display.set_caption("Snake")
+screen.fill(background_colour)
+pygame.display.flip()
 
-while True:
-    for event in pg.event.get():
-        if event.type == pg.QUIT:
-            exit()
-    
-    screen.fill(screen_fill)
-    pg.display.flip()
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
