@@ -1,7 +1,7 @@
 import pygame
 
 background_colour = (50, 50, 50)
-screen = pygame.display.set_mode((500, 500))
+screen = pygame.display.set_mode((800, 600))
 
 pygame.display.set_caption('Snake')
 pygame.display.set_icon()
