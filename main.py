@@ -1,4 +1,3 @@
-from lib2to3 import pgen2
 import pygame as pg
 import os
 
