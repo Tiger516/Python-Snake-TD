@@ -1,5 +1,6 @@
 from lib2to3 import pgen2
 import pygame as pg
+import os
 
 Window_Size = 500
 Window_Game_Name = "Snake"
@@ -10,6 +11,8 @@ pg.display.set_caption(Window_Game_Name)
 
 screen.fill(background_colour)
 pg.display.flip()
+
+Apple = pg.image.load(os.path.join('images', 'apple.png'))
 
 while running:
     for event in pg.event.get():
