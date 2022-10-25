@@ -1,1 +1,1 @@
-Simple Snake game made in PyGame
+Simple Snake game made in Pygame
