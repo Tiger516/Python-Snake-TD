@@ -10,10 +10,9 @@ game_display = pg.display.set_mode((window_width, window_height))
 window_game_name = "Snake"
 running = True
 background_colour = (50, 50, 50)
-screen = pg.display.set_mode((window_width, window_height))
 pg.display.set_caption(window_game_name)
 
-screen.fill(background_colour)
+game_display.fill(background_colour)
 pg.display.flip()
 
 apple = pg.image.load(os.path.join('images', 'apple.png'))
