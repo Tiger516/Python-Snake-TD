@@ -15,7 +15,7 @@ pg.display.set_caption(window_game_name)
 game_display.fill(background_colour)
 pg.display.flip()
 
-
+# creating images variebles
 
 apple = pg.image.load(os.path.join('images', 'apple.png'))
 apple = pg.transform.scale(apple, (32, 32)) 
