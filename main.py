@@ -15,7 +15,9 @@ pg.display.set_caption(window_game_name)
 game_display.fill(background_colour)
 pg.display.flip()
 
-apple = image.png
+
+
+apple = pg.image.load(os.path.join('images', 'apple.png'))
 apple = pg.transform.scale(apple, (32, 32)) 
 
 snake_head = pg.image.load(os.path.join('images', 'head.png'))
@@ -35,7 +37,7 @@ create_apple(randint(0, window_width - 32), randint(0, window_height - 32))
     
 pg.display.update()
 
-pg.display.set_icon(snake_head)
+pg.display.set_icon(apple)
 
 while running:
     for event in pg.event.get():
