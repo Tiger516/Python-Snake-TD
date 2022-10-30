@@ -15,8 +15,17 @@ pg.display.set_caption(window_game_name)
 game_display.fill(background_colour)
 pg.display.flip()
 
-apple = pg.image.load(os.path.join('images', 'apple.png'))
+apple = image.png
 apple = pg.transform.scale(apple, (32, 32)) 
+
+snake_head = pg.image.load(os.path.join('images', 'head.png'))
+snake_head = pg.transform.scale(snake_head, (32, 32)) 
+
+grid = pg.image.load(os.path.join('images', 'Other-Grid.png'))
+grid = pg.transform.scale(grid, (32, 32)) 
+
+snake_body = pg.image.load(os.path.join('images', 'Snake-Body.png'))
+snake_body = pg.transform.scale(snake_body, (32, 32)) 
 
 def create_apple(x,y):
     game_display.blit(apple, (x,y))
@@ -25,6 +34,8 @@ def create_apple(x,y):
 create_apple(randint(0, window_width - 32), randint(0, window_height - 32))
     
 pg.display.update()
+
+pg.display.set_icon(snake_head)
 
 while running:
     for event in pg.event.get():
