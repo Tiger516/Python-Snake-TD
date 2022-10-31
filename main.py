@@ -31,6 +31,9 @@ snake_body = pg.transform.scale(snake_body, (32, 32))
 
 def create_apple(x,y):
     game_display.blit(apple, (x,y))
+    
+def create_head(x,y):
+    game_display.blit(snake_head, (x,y))
 
 
 create_apple(randint(0, window_width - 32), randint(0, window_height - 32))
